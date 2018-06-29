@@ -54,18 +54,12 @@ href="https://twitter.com/gabehammersmith">him</a>.
       document.body.style.background = 'magenta none repeat scroll 0% 0%'
       paragraphs = document.querySelectorAll("p")
       paragraphs.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = "blue"; currentValue.style.fontFamily = "papyrus"})
-      headers1 = document.querySelectorAll("h1")
-      headers2 = document.querySelectorAll("h2")
-      headers3 = document.querySelectorAll("h3")
-      headers1.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = "green"; currentValue.style.fontFamily = "Comic Sans MS"})
-      headers2.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = "green"; currentValue.style.fontFamily = "Comic Sans MS"})
-      headers3.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = "green"; currentValue.style.fontFamily = "Comic Sans MS"})
+      headers = document.querySelectorAll("h1, h2, h3")
+      headers.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = "green"; currentValue.style.fontFamily = "Comic Sans MS"})
     }else{
       document.body.style.background = 'white'
       paragraphs.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = ""; currentValue.style.fontFamily = ""})
-      headers1.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = ""; currentValue.style.fontFamily = ""})
-      headers2.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = ""; currentValue.style.fontFamily = ""})
-      headers3.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = ""; currentValue.style.fontFamily = ""})
+      headers.forEach(function(currentValue, currentIndex, listObj){currentValue.style.color = ""; currentValue.style.fontFamily = ""})
     }
   }
 </script>
